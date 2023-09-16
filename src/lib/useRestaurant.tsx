@@ -16,7 +16,7 @@ export default function useRestaurant() {
     };
 
     fetchData();
-  }, []);
+  });
 
   return { restaurants, isLoading };
 }
