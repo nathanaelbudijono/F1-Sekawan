@@ -4,7 +4,7 @@ export default function useRestaurant() {
   const { getRestaurant, restaurants } = useAppStore();
   React.useEffect(() => {
     getRestaurant();
-  }, []);
+  });
 
   return restaurants;
 }

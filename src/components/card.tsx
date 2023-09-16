@@ -23,7 +23,7 @@ export default function Card({
 }: cardProps) {
   return (
     <div className="h-fit  w-full border border-gray-100 shadow-sm rounded-sm overflow-hidden">
-      <img src="/" className="h-36 w-full bg-gray-100 text-xs" />
+      <img src="/" className="h-36 w-full bg-gray-100 text-[5px]" alt={id} />
       <div className="flex flex-col p-2 gap-1">
         <RatingStars rating={rating} />
         <Typography variant="p">{name}</Typography>
