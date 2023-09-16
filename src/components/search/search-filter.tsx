@@ -25,8 +25,11 @@ export default function SearchFilter({
         filtered =
           selected === "Sort by rating"
             ? filtered.sort((a, z) => {
-                if (typeof a.id === "number" && typeof z.id === "number") {
-                  return +z.id - a.id;
+                if (
+                  typeof a.rating === "number" &&
+                  typeof z.rating === "number"
+                ) {
+                  return +z.rating - a.rating;
                 } else {
                   return 0;
                 }

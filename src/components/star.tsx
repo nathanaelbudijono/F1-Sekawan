@@ -22,7 +22,7 @@ export default function RatingStars({ rating }: RatingStarsProps) {
   if (hasHalfStar) {
     stars.push(
       <span key="half" className="text-blue-950 flex gap-[2px]">
-        <BiSolidStar /> <BiSolidStarHalf />
+        <BiSolidStarHalf />
       </span>
     );
   }
