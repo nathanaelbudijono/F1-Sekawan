@@ -5,11 +5,22 @@ import useRestaurant from "./lib/useRestaurant";
 import Card from "./components/card";
 import SearchFilter from "./components/search/search-filter";
 import SortListBox from "./components/search/sort-list-box";
+import Typography from "./components/typography";
 
 export default function App() {
-  const restaurants = useRestaurant();
+  const { restaurants, isLoading } = useRestaurant();
   const [filtered, setFiltered] = React.useState(() => restaurants);
   const [selected, setSelected] = React.useState(() => "Sort by name");
+  if (isLoading) {
+    return (
+      <Layout className="h-screen flex flex-col">
+        <Header />
+        <main className="mt-5">
+          <Typography variant="h4">Fetching..</Typography>
+        </main>
+      </Layout>
+    );
+  }
   return (
     <Layout className="flex flex-col">
       <Header />
