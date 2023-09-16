@@ -8,7 +8,7 @@ export default function Footer() {
       <section className="max-w-4xl mx-auto flex justify-center flex-col items-center gap-1">
         <div>
           <Typography variant="small" className="text-xs">
-            © {new Date().getFullYear()} All right reserved PT Tambang Jaya
+            © {new Date().getFullYear()} All right reserved Nathanael
           </Typography>
         </div>
         <div className="flex gap-2">
