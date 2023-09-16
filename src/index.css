@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.icon {
+  @apply hover:bg-blue-800 hover:text-white p-1 rounded-sm duration-200 ease-in-out text-2xl;
+}
