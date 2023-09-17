@@ -36,7 +36,7 @@ export default function App() {
         <main className="mt-5">
           {isLoading ? (
             <section className="grid grid-cols-4 gap-2 max-md:grid-cols-2 max-sm:grid-cols-1">
-              {Array.from({ length: 20 }).map((_, index) => (
+              {Array.from({ length: 20 }).map((item, index) => (
                 <LoadingCard key={index} />
               ))}
             </section>
