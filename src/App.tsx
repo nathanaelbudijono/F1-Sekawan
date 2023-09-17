@@ -5,8 +5,9 @@ import Card from "./components/card";
 import SearchFilter from "./components/search/search-filter";
 import SortListBox from "./components/search/sort-list-box";
 import Footer from "./components/footer";
-import { useAppStore } from "./lib/store";
 import LoadingCard from "./components/loading-card";
+
+import { useAppStore } from "./lib/store";
 
 export default function App() {
   const { getRestaurant, restaurants } = useAppStore();
@@ -15,8 +16,10 @@ export default function App() {
   const [isLoading, setIsLoading] = React.useState(true);
 
   React.useEffect(() => {
-    getRestaurant();
-    setIsLoading(false);
+    setTimeout(() => {
+      getRestaurant();
+      setIsLoading(false);
+    }, 3000);
   }, []);
   return (
     <>
