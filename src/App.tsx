@@ -19,7 +19,7 @@ export default function App() {
     setTimeout(() => {
       getRestaurant();
       setIsLoading(false);
-    }, 3000);
+    }, 4000);
   }, []);
   return (
     <>
